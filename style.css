@@ -132,7 +132,7 @@ button {
     font-weight: 700;
     line-height: normal;
     color: var(--Pure-White, #FFF);
-    margin-top: 1.875em;
+    margin-top: 1em;
 }
 
 button svg {
@@ -140,4 +140,93 @@ button svg {
     margin-right: 0.6875em;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 450px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 343px;
+        height: 611px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: var(--Pure-White, #FFF);
+        flex-direction: column;
+        padding-bottom: 11em;
+    }
+
+    .container .image {
+        background: url(/images/image-product-mobile.jpg), lightgray 0px 0px / 100% 100% no-repeat;
+        width: 343.697px;
+        height: 458px;
+        flex-shrink: 0;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        width: 343px;
+        height: 611px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: var(--Pure-White, #FFF);
+    }
+
+    .parfum {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 5px;
+        color: var(--Aurometal-Saurus, #6C7289);
+    }
+
+    .gabrielle {
+        width: 295px;
+        margin-right: 2em;
+        font-family: 'Fraunces';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    .content p {
+        width: 295px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    .price1{
+        font-family: 'Fraunces';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        width: 127px;
+        height: 32px;
+    }
+
+    button {
+        margin-top: 0;
+        width: 295px;
+        height: 48px;
+    }
+    
+    button span {
+        margin-left: 3px;
+    }
 }
