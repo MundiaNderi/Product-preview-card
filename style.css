@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    --cream-bg: var(--cream-bg, #F2EAE2);
+    --Gunmetal: var(--Gunmetal, #1C232B);
+    --saurus: var(--Aurometal-Saurus, #6C7289);
+    --aqua: var(--deep-aquamarine-hover, #1A4032);
+    --pure: var(--Pure-White, #FFF);
+}
+
+body {
+    background: var(--cream-bg, #F2EAE2);
+}
+
+
+.container {
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    flex-shrink: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10.9em;
+    border-radius: 10px;
+    overflow: hidden; 
+    background-color: #fff;
+}
+
+.container .image {
+    background: url(images/image-product-desktop.jpg), lightgray 0px 0px / 100% 100% no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 350px;
+    margin-right: 31px;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.parfum {
+    color: var(--saurus);
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    margin-top: 2em;
+}
+
+.gabrielle {
+    font-family: "Fraunces";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--saurus);
+}
+
+.content p {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    margin-bottom: 24px;
+    width: 237px;
+    color: var(--saurus, #6C7289);
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.price .price1 {
+    flex-direction: row;
+    font-family: "Fraunces";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-right: 10px;
+    color: var(--Deep-Aquamarine, #3D8168);
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.price span {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    color: var(--saurus, #6C7289);
+    text-decoration-line: line-through;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 236px;
+    height: 48px;
+    border-radius: 8px;
+    background: var(--deep-aquamarine-hover, #1A4032);
+    cursor: pointer;
+    border: 1px solid #1A4032;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--Pure-White, #FFF);
+    margin-top: 1.875em;
+}
+
+button svg {
+    flex-direction: row;
+    margin-right: 0.6875em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
